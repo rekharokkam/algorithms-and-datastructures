@@ -1,0 +1,17 @@
+Big O Notation
+--------------
+
+It is a means to measure how long an algorithm takes to run when the input varies. Especially when input is small and it grows into a big input.
+
+Formula is when O(n) - where n is the input
+
+an algorithm has good performance when O(1), O(log(n)), O(n), O(n log(n)), O(n^2), O(2^n), O(n!)
+
+O(1) - means independent of the input size alogrithm always runs in the same way. - Constant time
+O(n) - growing linearly per input growth
+
+Stack - LIFO - Last In First Out
+
+Where Stacks can be used is in the Undo/Redo Operations - like Word document. Many Virtual Machines like JVM are Stack Oriented.
+
+Queue - FIFO - First In First Out

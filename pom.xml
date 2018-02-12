@@ -1,7 +1,30 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.learning.basicjava</groupId>
-  <artifactId>algorithms-and-datastructures</artifactId>
-  <version>1.0</version>
-  <name>algorithms-and-datastructures in java for day to day applications</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.learning.basicjava</groupId>
+	<artifactId>algorithms-and-datastructures</artifactId>
+	<version>1.0</version>
+	<name>Learn Algorithms and Data Structures in Java for Day-to-Day Applications</name>
+	<url>https://www.safaribooksonline.com/library/view/learn-algorithms-and/9781788624428/</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.3</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core-java8</artifactId>
+			<version>1.0.0m1</version>
+		</dependency>
+	</dependencies>
 </project>
