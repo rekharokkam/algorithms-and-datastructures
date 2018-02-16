@@ -1,4 +1,4 @@
-package com.learning.basicjava.basicdatastructure;
+package com.learning.basicjava.lists;
 
 import java.util.Arrays;
 

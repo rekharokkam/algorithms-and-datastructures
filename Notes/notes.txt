@@ -10,8 +10,47 @@ an algorithm has good performance when O(1), O(log(n)), O(n), O(n log(n)), O(n^2
 O(1) - means independent of the input size alogrithm always runs in the same way. - Constant time
 O(n) - growing linearly per input growth
 
-Stack - LIFO - Last In First Out
+Stack - LIFO - Last In First Out. Head is always pointing to the last element added, so peek will always return the last element added. push - adding, pop - removing, peeking
 
 Where Stacks can be used is in the Undo/Redo Operations - like Word document. Many Virtual Machines like JVM are Stack Oriented.
 
-Queue - FIFO - First In First Out
+Queue - FIFO - First In First Out. Head is always pointing to the first element added, so peek will return first element. - offer - adding, poll - removing, peeking
+
+LinkedList - head is always the first element on the list. LinkedList is used for faster insertion and removal.
+removal and adding is O(1)
+slow lookup - O(n) as the entire list should be traversed to find the element we are looking for. 
+
+
+Comparison of different Basic DataStructure
+--------------------------------------------
+
+Array - Access [O(1)], insertion [O(n)], deletion [O(n)], seaarch [O(n)]
+Stack - Access [O(n)], insertion [O(1)], deletion [O(1)], search [O(n)]
+Queue - Access [O(n)], insertion [O(1)], deletion [O(1)], search [O(n)]
+Singly Linked List - Access [O(n)], insertion [O(1)], deletion [O(1)], search [O(n)]
+
+Hash Table, Hash Functions - Insertion O(1), deletion O(1), Search O(1)
+
+When a BrokenHashCode class is used as the Key, then all the elements are added to the same bucket without distributing the elements into different buckets.
+This violates the purpose of using the hashtable/hash storages.
+
+Binary Search Tree - is a data structure in which we have nodes containing data and 2 references to other nodes one on the left and one on the right.
+Access [O(logn)], insertion [O(logn)], deletion [O(logn)], search [O(logn)], display [O(n)]
+
+A right side Successor is the smallest data/value found on the right side subtree of the node to be deleted in Binary Search Tree data strcuture.
+When an element should be deleted from the Binary Search Tree, Then its successor should be searched for in the right subtree of the node to be deleted. Once found toBeDeleted
+will be replaced with the successor
+
+BUbble SOrt
+-----------
+Bubble Sort has complexity of O(n^2) - O- n square because of two loops
+One advantage of this sorting is it does not need any additional/complex datastructure.
+
+Selection Sort also has complexity of O(n^2) - 
+
+HeapSort, QuickSort, shellSort - have complexity of O(n log n)
+
+ 
+
+
+

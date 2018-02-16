@@ -1,4 +1,4 @@
-package com.learning.basicjava.basicdatastructure;
+package com.learning.basicjava.lists;
 
 import java.util.Stack;
 
@@ -48,10 +48,15 @@ public class StackTest {
 		
 		//when
 		stack.push("a");
+		stack.push("b");
+		
+		String element1 = stack.peek();
+		String element2 = stack.peek();
 		
 		//then
-		BDDAssertions.then(stack.size()).isEqualTo(1);
-		BDDAssertions.then(stack.peek()).isEqualTo("a");
-		BDDAssertions.then(stack.size()).isEqualTo(1);
+		BDDAssertions.then(stack.size()).isEqualTo(2);
+		BDDAssertions.then(element1).isEqualTo("b");
+		BDDAssertions.then(element2).isEqualTo("b");
+		BDDAssertions.then(stack.size()).isEqualTo(2);
 	}
 }
