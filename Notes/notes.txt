@@ -35,7 +35,8 @@ When a BrokenHashCode class is used as the Key, then all the elements are added 
 This violates the purpose of using the hashtable/hash storages.
 
 Binary Search Tree - is a data structure in which we have nodes containing data and 2 references to other nodes one on the left and one on the right.
-Access [O(logn)], insertion [O(logn)], deletion [O(logn)], search [O(logn)], display [O(n)]
+Access [O(logn)], insertion [O(logn)], deletion [O(logn)], search [O(logn)], display [O(n)]. BST are also referred to as Ordered or sorted Binary trees. 
+These data structures sort the items. This datastructure allows faster lookup, removal and insertion of data	
 
 A right side Successor is the smallest data/value found on the right side subtree of the node to be deleted in Binary Search Tree data strcuture.
 When an element should be deleted from the Binary Search Tree, Then its successor should be searched for in the right subtree of the node to be deleted. Once found toBeDeleted
@@ -49,6 +50,19 @@ One advantage of this sorting is it does not need any additional/complex datastr
 Selection Sort also has complexity of O(n^2) - 
 
 HeapSort, QuickSort, shellSort - have complexity of O(n log n)
+Heap Sort is not a stable sort.
+
+To build a heap elements always go from top to bottom and go from left to right. 
+
+
+A graph is a datastructure where in there are vertices and edges.
+
+.-------------------.
+A                   B
+
+A and B are vertex and the line joining both the vertices is the edge.
+Who uses graph, mostly social media sites that need to find linking between resources like facebook that recommends friends to friends. 
+
 
  
 

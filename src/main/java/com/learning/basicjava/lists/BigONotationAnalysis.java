@@ -16,7 +16,7 @@ public class BigONotationAnalysis {
 	/*
 	 * This function is said to have a complexity of O(n)
 	 * This function runs in O(n) time or Linear time
-	 * If the array has 10 items then it prints 10 times, if the array has 5 times then it prints 5 times.
+	 * If the array has 10 items then it prints 10 times, if the array has 5 items then it prints 5 times.
 	 * As the input grows, time taken to run this function also grows linear to the input.
 	 * 
 	 */
