@@ -54,6 +54,24 @@ Heap Sort is not a stable sort.
 
 To build a heap elements always go from top to bottom and go from left to right. 
 
+Blocking Queue
+--------------
+In a blocking Queue, A consumer blocks waiting when queue is empty and Producer blocks waiting if queue reached its max capacity.
+
+HyperLogLog
+-----------
+This is an algorithm/datastructure that helps in finding the cardinality of huge datasets. It is abbreviated as HLL for short.
+To execute this teacher has used HLL Library and google guava framework for producing hashing. HLLLongRunningUnitTest - example test
+
+Bloom Filter
+------------
+Bloom filter is a memory efficient probabilistic data structure that can be used to answer the question whether a given element is 
+present in the set or not.
+If bloomfilter returns false (false negative) then 100% element is not present in the set. If it returns true (false positive), 
+then there is a probability that element is in the set actually but we cannot be sure 100%. 
+Bloomfilter is designed to be space efficient and fast.
+When we use this datastructure we can mention the acceptable false positive probabilities which we can accept. Based on this bloomfilter
+will occupy as little memory as it can. BloomFilterTest
 
 A graph is a datastructure where in there are vertices and edges.
 
