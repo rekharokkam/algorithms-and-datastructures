@@ -79,7 +79,12 @@ A graph is a datastructure where in there are vertices and edges.
 A                   B
 
 A and B are vertex and the line joining both the vertices is the edge.
-Who uses graph, mostly social media sites that need to find linking between resources like facebook that recommends friends to friends. 
+Who uses graph, mostly social media sites that need to find linking between resources like facebook that recommends friends to friends.
+
+
+BFS 
+---
+is searched one level at a time. 
 
 
  
