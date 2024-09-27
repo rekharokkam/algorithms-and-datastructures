@@ -10,13 +10,12 @@ public class MyLinkedList <T> {
 			head = new Node<T> (element, null);
 			return;
 		}
-		
-		Node<T> prev = head;
-		//traverse the list linearly to find the last element on the list
-		for (Node<T> node = head.next; node != null; node = node.next) {
-			prev = node;
+
+		Node<T> currentNode = head;
+		while (null != currentNode.next) {
+			currentNode = currentNode.next;
 		}
-		prev.next = new Node<T> (element, null);
+		currentNode.next = new Node<T> (element, null);
 	}
 	
 	//O(1)

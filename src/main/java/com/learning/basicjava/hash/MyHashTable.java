@@ -50,6 +50,7 @@ public class MyHashTable<K, V> {
 	}
 	
 	public List<Integer> getEachBucketSize () {
+
 		return buckets.stream().map(List::size).collect(Collectors.toList());
 	}
 	
