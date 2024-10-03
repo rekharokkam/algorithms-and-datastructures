@@ -1,2 +1,13 @@
-Merge Sort
-----------
+Computer has different types of memory
+--------------------------------------
+Cache memory
+    Most expensive memory and close to the CPU
+
+
+
+Main memory
+Secondary memory
+
+Memory capacity
+---------------
+Number of bytes a computer can hold
