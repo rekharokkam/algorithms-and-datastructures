@@ -1,4 +1,4 @@
-package com.learning.basicjava.grokkingthecodinginterviewpattern;
+package com.learning.basicjava.grokkingthecodinginterviewpattern.twopointers;
 
 import java.util.Arrays;
 import java.util.LinkedList;

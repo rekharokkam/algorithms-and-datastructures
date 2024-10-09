@@ -1,4 +1,4 @@
-package com.learning.basicjava.grokkingthecodinginterviewpattern;
+package com.learning.basicjava.grokkingthecodinginterviewpattern.twopointers;
 
 /**
  * https://www.educative.io/courses/grokking-coding-interview/valid-palindrome

@@ -1,4 +1,4 @@
-package com.learning.basicjava.grokkingthecodinginterviewpattern;
+package com.learning.basicjava.grokkingthecodinginterviewpattern.twopointers;
 
 /**
  * Given a sentence, reverse the order of its words without affecting the order of letters within the given word.
