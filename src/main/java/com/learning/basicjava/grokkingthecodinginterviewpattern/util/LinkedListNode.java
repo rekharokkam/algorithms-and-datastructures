@@ -1,4 +1,4 @@
-package com.learning.basicjava.grokkingthecodinginterviewpattern.twopointers;
+package com.learning.basicjava.grokkingthecodinginterviewpattern.util;
 
 public class LinkedListNode {
     public int data;

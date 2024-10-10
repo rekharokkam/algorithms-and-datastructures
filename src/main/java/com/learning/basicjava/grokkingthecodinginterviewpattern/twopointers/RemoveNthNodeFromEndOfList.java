@@ -1,5 +1,8 @@
 package com.learning.basicjava.grokkingthecodinginterviewpattern.twopointers;
 
+import com.learning.basicjava.grokkingthecodinginterviewpattern.util.LinkedListNode;
+import com.learning.basicjava.grokkingthecodinginterviewpattern.util.MyLinkedList;
+
 /**
  * Given a singly linked list, remove the nth node from the end of the list and return its head.
  *
