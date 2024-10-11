@@ -29,11 +29,12 @@ public class LinkedListMiddle {
         LinkedListNode fast = head;
 
         do {
-            slow = (null != slow.nextNode) ? slow.nextNode : slow;
-            if (null != fast.nextNode) {
-                fast = fast.nextNode.nextNode;
+            if (null == fast.nextNode) {
+                return slow;
             }
-            if (null == fast || null == fast.nextNode){
+            slow = (null != slow.nextNode) ? slow.nextNode : head;
+            fast = fast.nextNode.nextNode;
+            if (null == fast) {
                 return slow;
             }
         } while (true);
@@ -42,11 +43,11 @@ public class LinkedListMiddle {
     public static void main(String[] args) {
         MyLinkedList linkedList = new MyLinkedList();
 
-        linkedList.add (2);
-        linkedList.add (4);
-        linkedList.add (6);
-        linkedList.add (8);
-        linkedList.add (10);
+//        linkedList.add (2);
+//        linkedList.add (4);
+//        linkedList.add (6);
+//        linkedList.add (8);
+//        linkedList.add (10);
 
 //        linkedList.add (1);
 //        linkedList.add (3);
@@ -56,6 +57,9 @@ public class LinkedListMiddle {
 //        linkedList.add (11);
 
 //        linkedList.add(16);
+
+        linkedList.add(1);
+        linkedList.add(2);
 
         System.out.println(linkedList.toString());
         LinkedListNode middleNode = middleNode (linkedList.head);
