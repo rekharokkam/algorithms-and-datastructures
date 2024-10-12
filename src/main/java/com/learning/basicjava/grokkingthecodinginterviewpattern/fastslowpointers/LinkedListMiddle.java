@@ -56,10 +56,10 @@ public class LinkedListMiddle {
 //        linkedList.add (9);
 //        linkedList.add (11);
 
-//        linkedList.add(16);
+        linkedList.add(16);
 
-        linkedList.add(1);
-        linkedList.add(2);
+//        linkedList.add(1);
+//        linkedList.add(2);
 
         System.out.println(linkedList.toString());
         LinkedListNode middleNode = middleNode (linkedList.head);

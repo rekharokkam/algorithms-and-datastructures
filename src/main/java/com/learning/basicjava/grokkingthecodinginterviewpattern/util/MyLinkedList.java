@@ -26,6 +26,23 @@ public class MyLinkedList extends LinkedListNode {
         }
     }
 
+    public static String nonCyclictoString (LinkedListNode head){
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        LinkedListNode node = head;
+        do {
+            sb.append((node != null)? node.data:"");
+            if (null == node){
+                break;
+            }
+            sb.append((node.nextNode != null) ? " , " : "");
+            node = node.nextNode;
+        } while (true);
+
+        sb.append("]");
+        return sb.toString();
+    }
+
     @Override
     public String toString (){
         StringBuilder sb = new StringBuilder();
