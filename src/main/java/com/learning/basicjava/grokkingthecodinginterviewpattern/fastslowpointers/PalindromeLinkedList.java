@@ -112,6 +112,8 @@ public class PalindromeLinkedList {
 //        linkedList.add (3);
 //        linkedList.add (7);
 
+        linkedList.add(16);
+
         boolean isTheListPalindrome = palindrome (linkedList.head);
         System.out.println(isTheListPalindrome);
     }

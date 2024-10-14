@@ -27,11 +27,11 @@ public class ReverseLinkedList {
     public static void main(String[] args) {
         MyLinkedList linkedList = new MyLinkedList();
 
-        linkedList.add (2);
-        linkedList.add (4);
-        linkedList.add (6);
-        linkedList.add (8);
-        linkedList.add (10);
+//        linkedList.add (2);
+//        linkedList.add (4);
+//        linkedList.add (6);
+//        linkedList.add (8);
+//        linkedList.add (10);
 
 //        linkedList.add(1);
 //        linkedList.add(3);
@@ -39,6 +39,8 @@ public class ReverseLinkedList {
 //        linkedList.add(7);
 //        linkedList.add(9);
 //        linkedList.add(11);
+
+        linkedList.add(16);
 
         System.out.println("BEFORE : " + linkedList.toString());
         linkedList.tail = linkedList.head;
