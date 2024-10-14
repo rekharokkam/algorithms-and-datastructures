@@ -29,11 +29,13 @@ public class LinkedListMiddle {
         LinkedListNode fast = head;
 
         do {
-            if (null == fast.nextNode) {
-                return slow;
+            if (null != fast.nextNode) {
+                slow = slow.nextNode;
+                fast = fast.nextNode.nextNode;
+            } else {
+                fast = null;
             }
-            slow = (null != slow.nextNode) ? slow.nextNode : head;
-            fast = fast.nextNode.nextNode;
+
             if (null == fast) {
                 return slow;
             }
@@ -49,14 +51,14 @@ public class LinkedListMiddle {
 //        linkedList.add (8);
 //        linkedList.add (10);
 
-//        linkedList.add (1);
-//        linkedList.add (3);
-//        linkedList.add (5);
-//        linkedList.add (7);
-//        linkedList.add (9);
-//        linkedList.add (11);
+        linkedList.add (1);
+        linkedList.add (3);
+        linkedList.add (5);
+        linkedList.add (7);
+        linkedList.add (9);
+        linkedList.add (11);
 
-        linkedList.add(16);
+//        linkedList.add(16);
 
 //        linkedList.add(1);
 //        linkedList.add(2);

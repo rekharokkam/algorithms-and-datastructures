@@ -10,24 +10,16 @@ public class ReverseLinkedList {
             return head;
         }
 
-        LinkedListNode previous = head, current = head.nextNode, next = current.nextNode;
-        head.nextNode = null;
-
-        if (null == next) { //only 2 elements in the list
-            next = current;
-            current.nextNode = previous;
-            head = current;
-            return head;
-        }
+        LinkedListNode previous = null, current = head, next = null;
 
         do {
+            next = current.nextNode;
             current.nextNode = previous;
             previous = current;
-            current = next;
-            next = current.nextNode;
+
+            current = (null != next) ? next : current;
 
         } while (null != next);
-        current.nextNode = previous;
         head = current;
         return head;
     }
@@ -40,6 +32,13 @@ public class ReverseLinkedList {
         linkedList.add (6);
         linkedList.add (8);
         linkedList.add (10);
+
+//        linkedList.add(1);
+//        linkedList.add(3);
+//        linkedList.add(5);
+//        linkedList.add(7);
+//        linkedList.add(9);
+//        linkedList.add(11);
 
         System.out.println("BEFORE : " + linkedList.toString());
         linkedList.tail = linkedList.head;
