@@ -22,33 +22,31 @@ public class LinkedListCycle {
     public static boolean detectCycle (LinkedListNode headNode) {
         LinkedListNode slow = headNode, fast = headNode;
 
-        //slow jumps by 1 and fast by 2. At some point if they meet, its cyclic.
-        do {
-//            System.out.println("slow : " + slow.data + "  fast node : " + fast.data);
-
-            if (null != slow && null != fast && null != slow.nextNode
-                    && null != fast.nextNode && null != fast.nextNode.nextNode) {
+        while (null != fast) {
+            //slow jumps by 1, fast jumps by 2
+            if (null != fast.nextNode) {
                 slow = slow.nextNode;
                 fast = fast.nextNode.nextNode;
-
-                if (fast.data == slow.data) {
-                    return true;
-                }
             } else {
                 return false;
             }
-        } while (true);
+
+            if ((null != fast) && (slow.data == fast.data) ) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void main(String[] args) {
         MyLinkedList linkedList = new MyLinkedList();
 
-//        linkedList.add (2);
-//        linkedList.add (4);
-//        linkedList.add (6);
-//        linkedList.add (8);
-//        linkedList.add (10);
-//        linkedList.cyclicLink(4);
+        linkedList.add (2);
+        linkedList.add (4);
+        linkedList.add (6);
+        linkedList.add (8);
+        linkedList.add (10);
+        linkedList.cyclicLink(4);
 
 
 //        linkedList.add (1);
@@ -57,13 +55,16 @@ public class LinkedListCycle {
 //        linkedList.add (7);
 //        linkedList.add (9);
 
-        linkedList.add (1);
-        linkedList.add (2);
-        linkedList.add (3);
-        linkedList.add (4);
-        linkedList.add (5);
-        linkedList.add (6);
-        linkedList.cyclicLink(4);
+//        linkedList.add (1);
+//        linkedList.add (2);
+//        linkedList.add (3);
+//        linkedList.add (4);
+//        linkedList.add (5);
+//        linkedList.add (6);
+//        linkedList.cyclicLink(4);
+
+//        linkedList.add(18);
+//        linkedList.add(19);
 
         System.out.println(linkedList.toString());
         boolean isCyclicNodeExists = detectCycle (linkedList.head);

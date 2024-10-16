@@ -6,10 +6,6 @@ import com.learning.basicjava.grokkingthecodinginterviewpattern.util.MyLinkedLis
 public class ReverseLinkedList {
 
     public static LinkedListNode revereLinkedList (LinkedListNode head) {
-        if (null == head.nextNode) { //list consists of only 1 element
-            return head;
-        }
-
         LinkedListNode previous = null, current = head, next = null;
 
         do {
@@ -41,6 +37,7 @@ public class ReverseLinkedList {
 //        linkedList.add(11);
 
         linkedList.add(16);
+//        linkedList.add(15);
 
         System.out.println("BEFORE : " + linkedList.toString());
         linkedList.tail = linkedList.head;
