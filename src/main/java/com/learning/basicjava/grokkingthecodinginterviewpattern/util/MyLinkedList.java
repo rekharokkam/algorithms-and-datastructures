@@ -1,6 +1,6 @@
 package com.learning.basicjava.grokkingthecodinginterviewpattern.util;
 
-public class MyLinkedList extends LinkedListNode {
+public class MyLinkedList {
 
     public LinkedListNode head;
     public LinkedListNode tail;
