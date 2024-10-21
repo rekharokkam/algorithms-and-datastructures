@@ -1,21 +1,17 @@
 package com.learning.basicjava.grokkingthecodinginterviewpattern.util;
 
-/**
- * I am using a doubly linked list
- */
-public class MyStack {
+public class MyStackWithSinglyLinkedList {
 
-    public DoublyLinkedListNode tail;
-    public DoublyLinkedListNode head;
+    public LinkedListNode head;
+    public LinkedListNode tail;
 
     public void push (int data) {
-        DoublyLinkedListNode newNode = new DoublyLinkedListNode(data);
+        LinkedListNode newNode = new LinkedListNode(data);
         if (null == head) {
             head = newNode;
-        } else {
+        }
+        if(null != tail) {
             tail.nextNode = newNode;
-            DoublyLinkedListNode temp = tail;
-            newNode.previousNode = temp;
         }
         tail = newNode;
     }
@@ -28,27 +24,40 @@ public class MyStack {
     //Will return the Node on top of the list and also remove it.
     public int pop () {
         int tailData = tail.data;
-        DoublyLinkedListNode tailPrevious = tail.previousNode;
-        tailPrevious.nextNode = null;
-        tail = tailPrevious;
+        LinkedListNode current = head, previousNode = null;
+
+        while (true) {
+            if (null == current.nextNode) {
+                break;
+            }
+            previousNode = current;
+            current = current.nextNode;
+        }
+
+        previousNode.nextNode = null;
+        tail = previousNode;
         return tailData;
     }
 
     public int length () {
         int stackLength = 0;
-        DoublyLinkedListNode node = head;
-        while (null != node) {
-            node = node.nextNode;
+        LinkedListNode current = head;
+        while (null != current) {
+            current = current.nextNode;
             stackLength ++;
         }
         return stackLength;
+    }
+
+    public boolean empty () {
+        return (null == head);
     }
 
     @Override
     public String toString (){
         StringBuilder sb = new StringBuilder();
         sb.append("[");
-        DoublyLinkedListNode node = head;
+        LinkedListNode node = head;
         do {
             sb.append((node != null)? node.data:"");
             if (tail.data == node.data){

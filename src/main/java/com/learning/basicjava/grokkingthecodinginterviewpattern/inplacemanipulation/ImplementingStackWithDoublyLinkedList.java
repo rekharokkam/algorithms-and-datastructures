@@ -1,11 +1,11 @@
 package com.learning.basicjava.grokkingthecodinginterviewpattern.inplacemanipulation;
 
-import com.learning.basicjava.grokkingthecodinginterviewpattern.util.MyStack;
+import com.learning.basicjava.grokkingthecodinginterviewpattern.util.MyStackWithDoublyLinkedList;
 
-public class ImplementingStackWithLinkedList {
+public class ImplementingStackWithDoublyLinkedList {
 
     public static void main(String[] args) {
-        MyStack myStack = new MyStack();
+        MyStackWithDoublyLinkedList myStack = new MyStackWithDoublyLinkedList();
         myStack.push (9);
         myStack.push (0);
         myStack.push (8);

@@ -1,7 +1,6 @@
 package com.learning.basicjava.grokkingthecodinginterviewpattern.inplacemanipulation;
 
 import com.learning.basicjava.grokkingthecodinginterviewpattern.util.MyQueue;
-import com.learning.basicjava.grokkingthecodinginterviewpattern.util.MyStack;
 
 public class ImplementingQueueWithLinkedList {
 
