@@ -34,8 +34,14 @@ public class MyStackWithSinglyLinkedList {
             current = current.nextNode;
         }
 
-        previousNode.nextNode = null;
-        tail = previousNode;
+        //last element in the stack
+        if (head == tail) {
+            head = null;
+            tail = null;
+        } else {
+            previousNode.nextNode = null;
+            tail = previousNode;
+        }
         return tailData;
     }
 
