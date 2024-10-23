@@ -63,16 +63,12 @@ public class MyStackWithSinglyLinkedList {
     public String toString (){
         StringBuilder sb = new StringBuilder();
         sb.append("[");
-        LinkedListNode node = head;
-        do {
-            sb.append((node != null)? node.data:"");
-            if (tail.data == node.data){
-                break;
-            }
-            sb.append((node.nextNode != null) ? " , " : "");
-            node = node.nextNode;
-        } while (true);
-
+        LinkedListNode current = head;
+        while (null != current) {
+            sb.append((current != null)? current.data:"");
+            sb.append((current.nextNode != null) ? " , " : "");
+            current = current.nextNode;
+        }
         sb.append("]");
         return sb.toString();
     }
