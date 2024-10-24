@@ -34,6 +34,6 @@ public class AdjacentDuplicatesInAString {
     }
 
     public static void main(String[] args) {
-        System.out.println(AdjacentDuplicatesInAString.removeDuplicates("aabbccdd"));
+        System.out.println(AdjacentDuplicatesInAString.removeDuplicates("sasadkkdassa"));
     }
 }
